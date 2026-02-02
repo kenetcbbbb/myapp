@@ -8,6 +8,9 @@ import { Order } from "./pages/Order";
 import { Contact } from "./pages/Contact";
 import { Header } from "./components/Header";
 
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+
 function App() {
   return (
     <Router basename="/myapp">
@@ -20,6 +23,10 @@ function App() {
         <Route path="/order" element={<Order />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* ДОБАВЛЕНО */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );

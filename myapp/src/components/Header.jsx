@@ -89,6 +89,26 @@ export const Header = () => {
         >
           Contact
         </Link>
+
+        <Link
+        to="/login"
+        style={{
+          ...linkStyle,
+          ...(location.pathname === "/login" ? activeStyle : {}),
+          }}
+          >
+            Login
+            </Link>
+
+            <Link
+            to="/register"
+            style={{
+              ...linkStyle,
+              ...(location.pathname === "/register" ? activeStyle : {}),
+              }}
+              >
+                Register
+                </Link>
       </nav>
     </header>
   );
